@@ -1,0 +1,77 @@
+
+- Pagina generador: https://hackerthemes.com/bootstrap-cheatsheet/
+
+Para instalacion descargar los archivos y linkearlos
+
+Sistema de Columnas:
+	permite distrbuir las columnas en vertical y horizontal
+	Bootstrap es mobile first
+	Esta basado en Flexbox
+
+	Reglas:
+	1 - tenemos un container (ej: DIV), Luego debemos tener una etiqueta row y por ultimo las columnas (ej_ col-12)
+	2 - Hay distintos contenedores que ocupan diferentes espacios (container != container-fluid)
+	3 - Las filas deben ser hijos directos de un contenedor (sino se generan errores)
+	4 - Se pueden crear multiples filas dentro de un contenedor
+	5 - Las columnas deben ser hijas directas de una fila
+	6 - solo pueden ser 12 columnas como maximo, col-6 quiere decir que la columna ocupa 6 espacios de los 12
+	7 - si se superan el numero de filas pasan a ocuparse las filas de abajo
+	8 - El contenido debe ir dentro de las columnas
+	9 - Si se deja solo la clase col se acomodan en proporciones iguales (ideal para que se adapten al contenido)
+	10 - Se pueden modificar dependiendo el tamaño de la ventana: col-* (0px), col-sm-* (576px), col-md-* (768px), col-lg-* (992px), col-xl-* (1200px)
+	11 - los contexto se heredan de menor a mayor (como en la anterior regla no hay que declarar en todas las medidas sino que se van heredando de mas chico a mas grande)
+	12 - Se pueden crear columnas vacias, la clase offset-* permite crear columnas vacias (Tambien se puede poner offset-sm-*)
+	13 - Se pueden crear columnas anidadas (poner un row dentro de un column)
+	14 - Se pueden cambiar las posiciones de las columnas, con order-first se cambian las posicion
+
+Sistemas de colores:
+
+	- Las medidas REM son las medidas por efetos de las fuentes, 1rem son 16px 2rem son 32px y asi.
+	- Emcabezados: 
+		- se puede poner la etiqueta class"h1"
+		- tambien existe la clase display-* para titulos mas grandes
+		- la clase text-center (left o rigth) es para alinear el texto
+		- existen otras clases para transformar el texto como text-uppercase
+		- bootstrap tiene su propia gama de colores
+		- para cambiar los colores es muy sencillo:
+			- hay que ir al archivo scss:
+			- .text-primary{
+				color: rgba(1,1,1,1)
+			}
+
+Margenes:
+	- las clases de marges son: m (margen) o p(padding) --> t.r.b.l --> 0,1,2,3,4 (estas medidas en REM): mt-1
+	- estos margenes ademas son responsivos
+	- para cambiarlo se pone con mt-sm-5
+
+Flexbox:
+	- ya de por si usa display: flex; por defecto
+	- las clases claves para flexbox son:
+		- d-flex para crear un entorno flexible
+		- tambien tenemos d-sm-flex, d-md-flex, ect.
+		- para poner flex-direction: row o column --> ponemos con flex-column o flex-row
+		- para alinear con justify-content es con justify-content-* (lo mismo con align-items-*)
+		- para modificar los hijos ponemos con una clase = align-self-*
+		- con flex-fill se ordenan todos los hijos iguales
+
+Clases de utilidades:
+	- bordes: se pone con la clase border-*
+		- para redondeados poner .rounded
+		- para sombras .shadow
+		- para imagenes .img-fluid y .img-thumbnail
+		- para display se usa la clase .d-* (osea la clase display)
+
+Embed Responsive:
+	- para hacer responsivos maps, videos y cualquier elemento multimedia
+	- poniendo la clase 
+		<div class="embed-responsive embed-responsive-16by9">
+  			<iframe class="embed-responsive-item" src="//www.youtube.com/embed/48OJbbI0DfE" allowfullscreen></iframe>
+		</div>
+
+Componentes:
+	- botones, carruseles, etc. 
+	- se pueden encontrar muchos de ellos por la web
+	- no tiene gran complicacion (ver documentacion)
+
+navbar:
+	- el componente siempre inicia con la clase navbar

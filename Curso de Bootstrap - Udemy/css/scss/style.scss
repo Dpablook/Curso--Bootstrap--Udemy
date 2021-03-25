@@ -1,0 +1,20 @@
+/*Variables*/
+
+$text: rgba(203,25,25,1);
+$primario: rgba(25,73,203,1);
+$secundario: rgba(25,203,67,1);
+
+/*Estilos de prueba*/
+
+.container{
+	border: 1px solid $text;
+}
+
+.row{
+	border: 1px solid $primario;
+}
+
+.col-12{
+	border: 1px solid $secundario;
+}
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Titulo</title>
+	<meta charset="utf-8">
+	<meta name="viewport">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1>Hola</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-2">
+				<h1>Hola</h1>
+			</div>
+			<div class="col-6">
+				<h1>6 columnas de 12</h1>
+			</div>
+			<div class="col-4">
+				<h1>1 columnas de 12</h1>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-2">
+				<h1>Hola</h1>
+			</div>
+			<div class="col-2 offset-2">
+				<p class="h1 text-center text-uppercase text-success bg-dark mt-4 ">Columna separada por un offset-2</p>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<p class="border border-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam impedit dolorem beatae, fuga nobis minima quaerat laborum ipsam magni veniam quia, officia accusantium perspiciatis porro deserunt deleniti rem voluptas quas!</p>
+	</div>
+
+
+	<div class="img container">
+		<div class="row">
+			<div class="col-6">
+				<img src="img/1.jpg" class="img-fluid img-fluid img-thumbnail" style="width: 500px; height: 500px">
+			</div>
+			<div class="col-6">
+				<img src="img/2.jpg" class="img-fluid img-thumbnail" style="width: 500px; height: 500px">
+			</div>
+		</div>
+	</div>
+
+	<div class="container row p-4 justify-content-center">
+		
+
+		<div class="col-sm-8">
+			<div class="border rounder p-4 shadow-sm text-center">
+				
+				<h1>titulo</h1>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus saepe vel doloremque, animi. Explicabo eum dolore consequuntur quas provident quaerat ipsa beatae, fugit facere similique saepe odit eligendi doloribus?</p>
+				<button type="submit" class="btn btn-info" data-toggle="collapse" data-target="#victima" aria-expanded="false">ver</button>
+			</div>
+
+			<div class="collapse" id="victima">
+				<div class="my-3 p-3 rounded bg-success text-white-text-left">
+					<h2>hola</h2>
+					<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Voluptate atque molestiae accusamus velit tenetur, facere, doloribus! Quisquam voluptas voluptates rerum repudiandae ex aspernatur, excepturi, libero ipsa fugiat, maxime deleniti dignissimos.</p>
+					<button type="submit" class="btn btn-info" data-toggle="collapse" data-target="#victima" aria-expanded="false">ver</button>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Navegador-->
+
+<nav class="navbar navbar-dark bg-success text-white">
+	<div class="container">
+		<a href="#" class="logo text-white navbar-brand">Logo</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal" aria-controls=
+		"#menu-principal" aria-expanded="false" aria-label="Despegar menu de navegacion">ver</button>
+	</div>
+</nav>
+
+<nav class="navbar navbar-dark bg-dark navbar-expanded-sm">
+  <div class="container">
+		<a href="#" class="logo text-white navbar-brand">Logo</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal" aria-controls=
+		"#menu-principal" aria-expanded="false" aria-label="Despegar menu de navegacion">ver</button>
+	</div>
+</nav>
+
+<nav class="navbar navbar-dark bg-primary">
+ <div class="container">
+		<a href="#" class="logo text-white navbar-brand">Logo</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal" aria-controls=
+		"#menu-principal" aria-expanded="false" aria-label="Despegar menu de navegacion">ver</button>
+	</div>
+</nav>
+
+
+	<script src="script/jQuery--v3.6.0.js"></script>
+	<script src="script/popper.js"></script>
+	<script src="script/bootstrap.min.js"></script>
+	<script src="script/javascript.js"></script>
+	
+</body>
+</html>
